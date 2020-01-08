@@ -1,0 +1,43 @@
+print("Welcome to Pypet")
+
+name = "McRibbons"
+age = 3
+weight = 2.5
+hungry = True
+photo = "(=^o.o^=)__"
+
+cat = {
+  "name": "McRibbons",
+  "age": 3,
+  "weight": 2.5,
+  "hungry": True,
+  "photo": "(=^o.o^=)__"
+}
+
+print ("Hello " + cat["name"])
+print (cat["photo"])
+
+name = "Sir Rodentus"
+age = 2
+weight = 4
+hungry = True
+photo = "<:3 )~~~~"
+
+mouse = {
+  "name": "Sir Rodentus",
+  "age": 2,
+  "weight": 4,
+  "hungry": True,
+  "photo": "<:3 )~~~~"
+}
+
+print("Hello " + mouse["name"])
+print(mouse["photo"])
+
+def feed(pet):
+  pet["hungry"] = False
+  pet["weight"] = pet["weight"] + 1
+
+  print(cat)
+  feed(cat)
+  print(cat)
