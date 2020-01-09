@@ -34,10 +34,33 @@ mouse = {
 print("Hello " + mouse["name"])
 print(mouse["photo"])
 
-def feed(pet):
-  pet["hungry"] = False
-  pet["weight"] = pet["weight"] + 1
+fish = {
+  "name": "Acqualungi",
+  "age": 2,
+  "weight": 4,
+  "hungry": True,
+  "photo": "<`)))><"
+}
 
-print(cat)
-feed(cat)
-print(cat)
+print("Hello " + fish["name"])
+print(fish["photo"])
+
+demon = {
+  "name": "Baatezu",
+  "age": 999,
+  "weight": 0,
+  "hungry": True,
+  "photo": "(^0M0^)"
+}
+
+print("Hello " + demon["name"])
+print(demon["photo"])
+
+pets = ["cat", "mouse", "fish", "demon"]
+
+def feed(pet):
+  if pet["hungry"] == True:
+    pet["hungry"] = False
+    pet["weight"] = pet["weight"] + 1
+  else:
+    print("Pypet is not hungry!")
