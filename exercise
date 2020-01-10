@@ -1,11 +1,5 @@
 print("Welcome to Pypet")
 
-name = "McRibbons"
-age = 3
-weight = 2.5
-hungry = True
-photo = "(=^o.o^=)__"
-
 cat = {
     "name": "McRibbons",
     "age": 3,
@@ -16,12 +10,6 @@ cat = {
 
 print("Hello " + cat["name"])
 print(cat["photo"])
-
-name = "Sir Rodentus"
-age = 2
-weight = 4
-hungry = True
-photo = "<:3 )~~~~"
 
 mouse = {
     "name": "Sir Rodentus",
@@ -34,12 +22,6 @@ mouse = {
 print("Hello " + mouse["name"])
 print(mouse["photo"])
 
-name = "Acqualungi"
-age = 5
-weight = 4
-hungry = True
-photo = "<`)))><"
-
 fish = {
     "name": "Acqualungi",
     "age": 5,
@@ -50,12 +32,6 @@ fish = {
 
 print("Hello " + fish["name"])
 print(fish["photo"])
-
-name = "Baatezu"
-age = 999
-weight = 0
-hungry = True
-photo = "(^0M0^)"
 
 demon = {
     "name": "Baatezu",
@@ -70,10 +46,11 @@ print(demon["photo"])
 
 pets = ["cat", "mouse", "fish", "demon"]
 
-
 def feed(pet):
     if pet["hungry"] == True:
         pet["hungry"] = False
         pet["weight"] = pet["weight"] + 1
+        print("Omnomom!")
     else:
         print("Pypet is not hungry!")
+        
